@@ -20,6 +20,9 @@ img｛
  min-height:100%;
 ｝
 ```
+## gridのposition
+- グリッドの親をrelative、アイテムの一つをabsoluteとした時、そのアイテムは整列のロジックから除外される
+- 親が作ったグリッドに合わせて、grid-columnなどで位置指定できる
 
 ## grid-auto-flow
 次書く
