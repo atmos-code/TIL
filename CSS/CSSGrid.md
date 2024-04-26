@@ -24,6 +24,11 @@ img｛
 - グリッドの親をrelative、アイテムの一つをabsoluteとした時、そのアイテムは整列のロジックから除外される
 - 親が作ったグリッドに合わせて、grid-columnなどで位置指定できる（その位置に既に要素が置かれていても、その上に重ねて配置される）
 
+## grid-auto-rows,grid-auto-columns
+- 暗黙的なグリッド（自動配置）のサイズ指定
+- ２つ以上書くと、それらが交互に繰り返される
+- grid-auto-rows:100px 200px →100px 200pxが繰り返される
+
 ## grid-auto-flow
 ### grid-auto-flow: row;行から埋める
 - 左から右へ→上から下へ
