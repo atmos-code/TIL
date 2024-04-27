@@ -21,10 +21,14 @@ img｛
 ｝
 ```
 
-## トラックサイズの考え方
+## CSSGridのauto
 - autoは通常レイアウトのautoとは違う
+- auto = minmax(auto,auto)
 - CSSgridのautoはトラックに配置されたアイテムのmin-width/min-heightの中で最も大きいサイズで決まる
-- 
+- いくつか条件はあるものの、minmaxの最小値がmin-contentになってしまいやすく、崩れやすい
+- このため、以下のように記載するのが無難
+- minmax(0,auto)
+- frも考え方は同じ
 
 ## gridのposition
 - グリッドの親をrelative、アイテムの一つをabsoluteとした時、そのアイテムは整列のロジックから除外される
